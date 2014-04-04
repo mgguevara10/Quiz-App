@@ -1,31 +1,67 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
-</head>
-<body>
-    <div>
-        <h1>What is your favorite country</h1>
-    </div>
+      <title>
+          Quiz App
+        </title>
+        <h1>Astronomy Quiz</h1>
+    </head>
+     <body>
+        <div id="one" class="unhidden">
+            <form name="first">
+                1) Who confirmed the expansion of the universe?</br></br>
+                <input type="radio" id="a" value="1" name="quiz">Albert Einstein<br></br>
+                <input type="radio" id="a" value="2" name="quiz">Edwin Hubble<br></br>
+                <input type="radio" id="a" value="3" name="quiz">David Graham<br></br>
+                <input type="button" value="next" onclick="firstAnswer()">
+                <input type="hidden" id="txt1">
+            </form>
+        </div>
 
-    <div Class= "Questions">
-        <p>1.</p>
-    </div>
-     
-     <p> </p>
-    
+        <div class="hidden" id="two">
+            <form name="second">
+                2) How long does it take light to travel from the moon to the surface of earth?</br></br>
+                <input type="radio" id="a" value="1" name="quiz">three seconds<br></br>
+                <input type="radio" id="a" value="2" name="quiz">one second<br></br>
+                <input type="radio" id="a" value="3" name="quiz">ten minutes<br></br>
+                <input type="button" value="next" onclick="secondAnswer()">
+                <input type="hidden" id="txt2">
+            </form>
+        </div>
 
-    <input class="option"type="text" id="todoInput" /> <input type="button" onclick="buttonClick();" value="Add Todo" />
+        <div class="hidden" id="three">
+            <form name="third">
+                3) NA is the official abbreviation for which element??</br></br>
+                <input type="radio" id="a" value="1" name="quiz">Sodium<br></br>
+                <input type="radio" id="a" value="2" name="quiz">Neon<br></br>
+                <input type="radio" id="a" value="3" name="quiz">Sulfur<br></br>
+                <input type="button" value="next" onclick="thirdAnswer()">
+                <input type="hidden" id="txt3">
+            </form>
+        </div>
 
-    <p id="sel"></p>
+        <div class="hidden" id="four">
+            <form name="four">
+                4) Which of these planets does not have a satellite??</br></br>
+                <input type="radio" id="a" value="1" name="quiz">Earth<br></br>
+                <input type="radio" id="a" value="2" name="quiz">Jupiter<br></br>
+                <input type="radio" id="a" value="3" name="quiz">Mercury<br></br>
+                <input type="button" value="next" onclick="fourAnswer()">
+                <input type="hidden" id="txt4">
+            </form>
+        </div>
 
-    <ol id="listeditems"></ol>
+        <div class="hidden" id="five">
+            <form name="five">
+                5) An Astronomical Unit is the mean distance between which two celestial bodies?</br></br>
+                <input type="radio" id="a" value="1" name="quiz">Earth and Sun<br></br>
+                <input type="radio" id="a" value="2" name="quiz">Earth and Mars<br></br>
+                <input type="radio" id="a" value="3" name="quiz">Solar System<br></br>
+                <input type="button" value="next" onclick="fiveAnswer()">
+                <input type="hidden" id="txt5">
+            </form>
+        </div>
 
-
-
-
-
-
-    <script src="JavaScript1.js"></script>
-</body>
+        <script src="JavaScript1.js"></script>
+    </body>
 </html>
